@@ -1,5 +1,13 @@
 ---
+// Dependencies
+import { Image } from "astro:assets";
+
+// Components & Layouts
 import Section from "../layouts/Section.astro";
+
+// Images
+import dWomen from "../assets/img/dress-women.png";
+import dMen from "../assets/img/dress-men.png";
 ---
 
 <Section
@@ -7,4 +15,18 @@ import Section from "../layouts/Section.astro";
   class="flex flex-col justify-between items-center text-primary gap-8"
 >
   <h1 class="text-4xl font-bold text-center">Dress Code</h1>
+  <div class="flex">
+    <Image src={dWomen} alt="Dress code for women" />
+    <Image src={dMen} alt="Dress code for men" />
+  </div>
+  <h3 class="text-4xl font-bold text-center">Black Tie</h3>
+  <h5 class="text-2xl text-center">
+    Una ocasión especial merece un look especial.
+  </h5>
+  <p class="text-xl max-w-[600px] text-center">
+    Los colores <strong>blanco</strong>, <strong>verde</strong>, <strong
+      >dorado</strong
+    > y <strong>plateado</strong> guardan un lugar especial, por eso estarán reservados
+    en este día tan importante.Te agradecemos evitar su uso para esta ocasión especial.
+  </p>
 </Section>
