@@ -1,0 +1,47 @@
+---
+import Section from "../layouts/Section.astro";
+---
+
+<Section
+  id="hero"
+  class="flex flex-col justify-between items-center min-h-[80dvh] text-white bg-black relative"
+  hasOverlay
+>
+  <div class="flex flex-col items-center gap-4 pt-8 z-10 justify-center">
+    <h1 class="text-8xl font-bold text-center">Isa & Dani</h1>
+    <div class="flex gap-8 flex-wrap justify-center">
+      <div class="flex flex-col items-center text-3xl border-r pr-4">
+        <span>120</span>
+        <p>Días</p>
+      </div>
+      <div class="flex flex-col items-center text-3xl border-r pr-4">
+        <span>20</span>
+        <p>Horas</p>
+      </div>
+      <div class="flex flex-col items-center text-3xl border-r pr-4">
+        <span>20</span>
+        <p>Min</p>
+      </div>
+      <div class="flex flex-col items-center text-3xl">
+        <span>20</span>
+        <p>Seg</p>
+      </div>
+    </div>
+  </div>
+  <div class="pb-8 flex flex-col items-center gap-4 z-10">
+    <h3 class="text-4xl">Salmos 1:3</h3>
+    <p class="text-xl max-w-[600px] text-center">
+      Son como árboles plantados a la orilla de un río, que siempre dan fruto en
+      su tiempo. Sus hojas nunca se marchitan, y prosperan en todo lo que hacen.
+    </p>
+  </div>
+</Section>
+
+<style>
+  section {
+    background-image: url("/src/assets/img/bg-hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>

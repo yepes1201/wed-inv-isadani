@@ -1,0 +1,22 @@
+---
+// Types
+import type { HTMLAttributes } from "astro/types";
+
+// Utils
+import { cn } from "../utils/tw.utils";
+
+interface Props extends HTMLAttributes<"section"> {
+  hasOverlay?: boolean;
+}
+
+const { class: className, hasOverlay = false, ...props } = Astro.props;
+---
+
+<section class={cn("p-4 pt-16", className)} {...props}>
+  {
+    hasOverlay && (
+      <div class="absolute w-full h-full bg-black opacity-50 top-0" />
+    )
+  }
+  <slot />
+</section>

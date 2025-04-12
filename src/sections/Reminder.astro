@@ -1,0 +1,37 @@
+---
+import Section from "../layouts/Section.astro";
+---
+
+<Section
+  id="reminder"
+  class="flex flex-col justify-between items-center text-primary gap-8"
+>
+  <audio controls loop autoplay>
+    <source src="/src/assets/audio/reminder.mp3" type="audio/mp3" />
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <div class="flex flex-col items-center gap-4">
+    <h2 class="text-4xl font-bold text-center">Estás Invitado</h2>
+    <p class="text-xl text-center">
+      Queremos celebrar este momento tan especial contigo, porque las mejores
+      historias se comparten con las personas que más queremos.Prepárate para un
+      día lleno de amor, risas y buenos momentos. ¡Tu presencia hará que nuestra
+      felicidad sea aún más completa!
+    </p>
+  </div>
+  <div class="flex flex-col gap-4 items-center">
+    <h2 class="text-4xl font-bold text-center">Te esperamos el</h2>
+    <div class="flex gap-4 items-center justify-center text-center text-xl">
+      <div class="border-r pr-4 border-r-primary/50">
+        <p>12 Julio</p>
+        <span>4:30 p.m.</span>
+      </div>
+      <div>
+        <p>Hotel del Prado</p>
+        <span class="italic">Salón el patio de andaluz</span>
+      </div>
+    </div>
+  </div>
+  <button>Agendar Recordatorio</button>
+</Section>
